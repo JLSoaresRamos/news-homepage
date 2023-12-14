@@ -1,0 +1,35 @@
+@use '../../sass/variables' as v;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    margin-bottom: 2rem;
+
+    .menu {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        gap: 2rem;
+
+        a {
+            &:hover {
+                color: v.$soft-orange;
+            }
+        }
+    }
+
+    @media (max-width: v.$tablet-width) {
+        .nav {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+        }
+    }
+}
+

@@ -1,0 +1,56 @@
+@use "../../sass/variables" as v;
+
+.top {
+    display: flex;
+    grid-row: 3;
+    grid-column: 1 / -1;
+
+    img {
+        width: 100%;
+    }
+
+    .articles {
+        .article {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            &:hover {
+                .title {
+                    color: v.$soft-red;
+                }
+            }
+
+            .classification-number {
+                font-size: 2rem;
+                font-weight: 800;
+                color: v.$grayish-blue;
+                &::before {
+                    content: "0";
+                }
+            }
+
+            .title {
+                font-size: 1rem;
+            }
+
+            .description {
+                text-wrap: balance;
+            }
+        }
+    }
+
+    @media (max-width: v.$tablet-width) {
+        flex-direction: column;
+        grid-row: -1;
+        gap: 1.5rem;
+
+        .articles {
+            .article {
+                display: grid;
+                grid-template-columns: 30% 1fr;
+                justify-content: space-between;
+                gap: 1rem;
+            }
+        }
+    }
+}
