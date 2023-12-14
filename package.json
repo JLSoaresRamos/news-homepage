@@ -2,7 +2,7 @@
   "name": "news-homepage",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://JLSoaresRamos.github.io/frontendmentor-challenges/news-homepage",
+  "homepage": "https://JLSoaresRamos.github.io/news-homepage",
   "type": "module",
   "scripts": {
     "dev": "vite",
