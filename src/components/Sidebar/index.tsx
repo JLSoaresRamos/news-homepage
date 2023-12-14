@@ -10,7 +10,7 @@ export default function Sidebar({isOpen, onClose} : Props) {
         <div className={isOpen ? 'layer' : 'hidden'}>
             <nav className="sidebar">
                 <header className='sidebar-header'>
-                    <img src="/assets/images/icon-menu-close.svg" onClick={() => onClose()} alt="" />
+                    <img src="/news-homepage/public/assets/images/icon-menu-close.svg" onClick={() => onClose()} alt="" />
                 </header>
                 <ul>
                     <li>

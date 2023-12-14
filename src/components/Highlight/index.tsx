@@ -5,12 +5,12 @@ export default function Highlight() {
         <article className="highlight">
             <figure className='highlight-image'>
                 <img 
-                    src="/assets/images/image-web-3-desktop.jpg"
+                    src="/news-homepage/public/assets/images/image-web-3-desktop.jpg"
                     className='desktop-image' 
                     alt="" 
                 />
                 <img 
-                    src="/assets/images/image-web-3-mobile.jpg"
+                    src="/news-homepage/public/assets/images/image-web-3-mobile.jpg"
                     className='mobile-image' 
                     alt="" 
                 />
