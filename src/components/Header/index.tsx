@@ -3,6 +3,9 @@ import { useState } from 'react'
 import './header.scss'
 import Sidebar from '../Sidebar'
 
+import logo from '/assets/images/logo.svg'
+import menuIcon from '/assets/images/icon-menu.svg'
+
 export default function Header() {
 
     const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +14,7 @@ export default function Header() {
         <>
             <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)}/>
             <header className="header">
-                <img src="/news-homepage/public/assets/images/logo.svg" alt="Logo" />
+                <img src={logo} alt="Logo" />
                 <nav className='nav'>
                     <a href='#'>Home</a>
                     <a href='#'>New</a>
@@ -20,7 +23,7 @@ export default function Header() {
                     <a href='#'>Categories</a>
                 </nav>
                 <img 
-                    src="/news-homepage/public/assets/images/icon-menu.svg" 
+                    src={menuIcon} 
                     className='menu'
                     onClick={() => setIsOpen(true)}
                     alt="" 

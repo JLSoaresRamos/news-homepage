@@ -1,16 +1,19 @@
 import './highlight.scss'
 
+import desktopImage from '/assets/images/image-web-3-desktop.jpg'
+import mobileImage from '/assets/images/image-web-3-mobile.jpg'
+
 export default function Highlight() {
     return(
         <article className="highlight">
             <figure className='highlight-image'>
                 <img 
-                    src="/news-homepage/public/assets/images/image-web-3-desktop.jpg"
+                    src={desktopImage}
                     className='desktop-image' 
                     alt="" 
                 />
                 <img 
-                    src="/news-homepage/public/assets/images/image-web-3-mobile.jpg"
+                    src={mobileImage}
                     className='mobile-image' 
                     alt="" 
                 />

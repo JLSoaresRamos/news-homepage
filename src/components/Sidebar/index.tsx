@@ -1,5 +1,8 @@
 import './sidebar.scss'
 
+import closeIcon from '/assets/images/icon-menu-close.svg';
+
+
 type Props = {
     onClose: () => void;
     isOpen: boolean;
@@ -10,7 +13,7 @@ export default function Sidebar({isOpen, onClose} : Props) {
         <div className={isOpen ? 'layer' : 'hidden'}>
             <nav className="sidebar">
                 <header className='sidebar-header'>
-                    <img src="/news-homepage/public/assets/images/icon-menu-close.svg" onClick={() => onClose()} alt="" />
+                    <img src={closeIcon} onClick={() => onClose()} alt="" />
                 </header>
                 <ul>
                     <li>
